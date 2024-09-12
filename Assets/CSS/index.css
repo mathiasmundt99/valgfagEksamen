@@ -9,6 +9,8 @@
     max-width: 100%;
 }
 
+/*----Owners Section----*/
+
 .ownerAndTxtTop {
     display: flex;
     align-items: flex-start; 
@@ -72,12 +74,20 @@
     max-width: 100%; 
     height: auto; 
   }
+
+  .dyr h4{
+    margin: 0;
+  }
   
   .dyr p {
     margin: 0; 
   }
   
-  
+/*----Pension & Internat Section----*/
+
+
+/*----Andres kommentarer----*/
+
 
 
   
