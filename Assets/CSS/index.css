@@ -88,6 +88,67 @@
 
 /*----Andres kommentarer----*/
 
+.commentWrapper {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 4rem; 
+}
+
+.commentCarouselSec {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    position: relative;
+}
+
+.carouselSec {
+    display: flex;
+    overflow: hidden;
+    width: 80%;
+}
+
+.comment {
+    display: none;
+    font-size: 18px;
+    text-align: center;
+    padding: 20px;
+    min-width: 100%;
+    transition: transform 0.5s ease;
+}
+
+.comment.active {
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    background-color: var(--btnBlue);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--hoverGreen);
+}
+
+.prev, .next {
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
 
 
   
