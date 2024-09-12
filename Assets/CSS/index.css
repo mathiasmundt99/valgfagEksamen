@@ -42,16 +42,42 @@
   }
 
   /*----Ny ven Div----*/
-
-  .nyVenDiv{
+  .nyVenSec {
     background-color: var(--globalGreen);
-    display: flex;
-    align-items: flex-start;
+    text-align: center;
   }
 
-  .dyr{
-    
+  .nyVenSec h3{
+    padding-top: 4rem;
   }
+
+  .nyVenDiv {
+    display: flex; 
+    justify-content: space-between; 
+    gap: 20px; 
+    width: 100%; 
+    padding-bottom: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+  }
+  
+  .dyr {
+    flex: 1; 
+    text-align: center; 
+    box-sizing: border-box; 
+  }
+  
+  .dyr img {
+    max-width: 100%; 
+    height: auto; 
+  }
+  
+  .dyr p {
+    margin: 0; 
+  }
+  
+  
 
 
   
