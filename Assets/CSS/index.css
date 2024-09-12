@@ -7,5 +7,51 @@
 
 .heroVideo video{
     max-width: 100%;
-
 }
+
+.ownerAndTxtTop {
+    display: flex;
+    align-items: flex-start; 
+    gap: 20px; 
+    padding-top: 4rem;
+  }
+  .ownerAndTxtBottom {
+    display: flex;
+    align-items: flex-start; 
+    gap: 20px;
+    padding-top: 4rem;
+  }
+  
+  .ownerAndTxtTop img {
+    max-width: 100%; 
+    height: auto; 
+    padding-left: 4rem;
+  }
+
+  .ownerAndTxtBottom img {
+    max-width: 100%; 
+    height: auto;
+    padding-right: 4rem;
+  }
+  
+  .ownerDesc {
+    flex: 1; 
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 4rem;
+  }
+
+  /*----Ny ven Div----*/
+
+  .nyVenDiv{
+    background-color: var(--globalGreen);
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .dyr{
+    
+  }
+
+
+  
