@@ -1,0 +1,11 @@
+/*-----Hero Video-----*/
+
+.heroVideo{
+    width: 100%;
+    min-height: 20vh;
+}
+
+.heroVideo video{
+    max-width: 100%;
+
+}
