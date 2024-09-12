@@ -7,6 +7,14 @@
 :root{
     --stdPadding: 0px;
     --stdMargin: 0px;
+    --btnBlue:#419E9F;
+    --globalGreen: #91B742;
+    --hoverGreen: #6A951F;
+    --acordionGreen: #8EC187;
+    --lightBlue: #9FDFE0;
+    --yellowHeadFoot: #F1DC99;
+    --txtColor: #110106;
+    --white: #FFFFFF;
 }
 
 body{
