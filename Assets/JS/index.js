@@ -1,4 +1,3 @@
-
 // Her sættes variablen commentIndex = 0
 let commentIndex = 0;
 // Her bruges vores querySelector til at ramme alle elementer med klassen "comment"
@@ -9,10 +8,8 @@ const comments = document.querySelectorAll('.comment');
 function showComment(index) {
     comments.forEach((comment, i) => {
         comment.classList.remove('active');
-        comment.setAttribute('true');
         if (i === index) {
             comment.classList.add('active');
-            comment.setAttribute('false');
         }
     });
 }
@@ -29,4 +26,5 @@ function prevComment() {
     showComment(commentIndex);
 }
 
+// Vis den første kommentar
 showComment(commentIndex);
