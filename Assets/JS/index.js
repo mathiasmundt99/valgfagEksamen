@@ -1,18 +1,18 @@
 
-// Her sættes commentIndex = 0
+// Her sættes variablen commentIndex = 0
 let commentIndex = 0;
 // Her bruges vores querySelector til at ramme alle elementer med klassen "comment"
 const comments = document.querySelectorAll('.comment');
 
 // Den function sørger for at fjerne active klassen på alle comments
-// Udover den comment som commetIndex = i 
+// Udover den comment hvor commetIndex = i 
 function showComment(index) {
     comments.forEach((comment, i) => {
         comment.classList.remove('active');
-        comment.setAttribute('aria-hidden', 'true');
+        comment.setAttribute('true');
         if (i === index) {
             comment.classList.add('active');
-            comment.setAttribute('aria-hidden', 'false');
+            comment.setAttribute('false');
         }
     });
 }
