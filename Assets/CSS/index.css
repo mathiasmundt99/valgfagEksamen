@@ -1,0 +1,185 @@
+/*-----Hero Video-----*/
+
+.heroVideo{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden; 
+}
+
+.heroVideo video{
+    max-width: 100%;
+}
+
+.textOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.heroText {
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 20px;
+    border-radius: 5px; 
+}
+
+.heroText h1 {
+    color: var(--white); 
+    margin: 0;
+    font-size: 2em; 
+    text-align: center;
+}
+
+
+
+/*----Owners Section----*/
+
+.ownerAndTxtTop {
+    display: flex;
+    align-items: flex-start; 
+    gap: 20px; 
+    padding-top: 4rem;
+  }
+
+  .ownerAndTxtBottom {
+    display: flex;
+    align-items: flex-start; 
+    gap: 20px;
+    padding-top: 4rem;
+  }
+  
+  .ownerAndTxtTop img {
+    max-width: 100%; 
+    height: auto; 
+    padding-left: 4rem;
+  }
+
+  .ownerAndTxtBottom img {
+    max-width: 100%; 
+    height: auto;
+    padding-right: 4rem;
+  }
+  
+  .ownerDesc {
+    flex: 1; 
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 4rem;
+  }
+
+  /*----Ny ven Div----*/
+  
+  .nyVenSec {
+    background-color: var(--globalGreen);
+    text-align: center;
+  }
+
+  .nyVenSec h3{
+    padding-top: 4rem;
+  }
+
+  .nyVenDiv {
+    display: flex; 
+    justify-content: space-between; 
+    gap: 20px; 
+    width: 100%; 
+    padding-bottom: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+  }
+  
+  .dyr {
+    flex: 1; 
+    text-align: center; 
+    box-sizing: border-box; 
+  }
+  
+  .dyr img {
+    max-width: 100%; 
+    height: auto; 
+  }
+
+  .dyr h4{
+    margin: 0;
+  }
+  
+  .dyr p {
+    margin: 0; 
+  }
+  
+
+/*----Carousel Kommentarer----*/
+
+.commentWrapper {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 4rem; 
+}
+
+.commentCarouselSec {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    position: relative;
+}
+
+.carouselSec {
+    display: flex;
+    overflow: hidden;
+    width: 80%;
+    height: 150px
+}
+
+.comment {
+    display: none;
+    text-align: center;
+    padding: 20px;
+    min-width: 100%;
+    height: 100%
+}
+
+.comment.active {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 30px;
+}
+
+button {
+    background-color: var(--btnBlue);
+    color: var(--white);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--hoverGreen);
+}
+
+.prev, .next {
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+
+  
