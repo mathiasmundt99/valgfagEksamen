@@ -15,16 +15,19 @@ function showComment(index) {
 }
 
 // Function til pilene på index.html
+// commentIndex sættes og bruges i showComment()
+// % bruges til at sørger for at vi ikke overgår comment.lentgh men wrapper tilbage til 0 
 function nextComment() {
     commentIndex = (commentIndex + 1) % comments.length;
     showComment(commentIndex);
 }
 
 // Function til pilene på index.html
+// commentIndex sættes og bruges i showComment()
 function prevComment() {
     commentIndex = (commentIndex - 1 + comments.length) % comments.length;
     showComment(commentIndex);
 }
 
-// Vis den første kommentar
+// Vis den første kommentar 
 showComment(commentIndex);
