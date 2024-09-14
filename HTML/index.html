@@ -6,10 +6,50 @@
     <title>Document</title>
     <link rel="stylesheet" href="../Assets/CSS/globalStyle.css" />
     <link rel="stylesheet" href="../Assets/CSS/index.css" />
+    <link rel="stylesheet" href="../Assets/CSS/dagligRutine.css">
     <script src="../Assets/JS/app.js" defer></script>
   </head>
   <body>
-    <header></header>
+    <section class="sellingPointsBar">
+      <div class="sellingpoint">
+        <img src="../Assets/Img/ikoner/thumbsUp.svg" alt="Thumbs up ikon" />
+        <p>Internat og pension i en</p>
+      </div>
+      <div class="sellingpoint">
+        <img src="../Assets/Img/ikoner/doktor.svg" alt="Doktor ikon" />
+        <p>Drives af uddannet dyrelæge og veterinærsygeplejerske</p>
+      </div>
+      <div class="sellingpoint">
+        <img src="../Assets/Img/ikoner/hjerte.svg" alt="Hjerte ikon" />
+        <p>Vi elsker alle internatdyr og pensionsdyr ens!</p>
+      </div>
+    </section>
+    <header>
+      <img src="../Assets/Img/Forside/logo.png" alt="logo" class="navlogo" />
+      <nav>
+        <ul>
+          <li>
+            <a href="#">Adoption</a>
+            <ul class="dropDownAdoption">
+              <li><a href="#">Adopter et dyr</a></li>
+              <li><a href="#">Praktisk information</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Pensionsophold</a>
+            <ul class="dropDownPension">
+              <li><a href="#">Daglig rutine</a></li>
+              <li><a href="#">Book ophold</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Adfærdstræning</a></li>
+          <li><a href="#">Produkter</a></li>
+          <li><a href="#">Tips & Tricks</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Kontakt os</a></li>
+        </ul>
+      </nav>
+    </header>
     <main>
       <section class="heroVideo">
         <video src="../Assets/Img/Forside/forsideHeroVideo.mp4" autoplay muted loop playsinline></video>
@@ -125,19 +165,19 @@
       <section class="carouselSec">
           <div class="comment active">
               <p>"Super service, Milo havde en super god uge hos Sejr & Davidsen Pension!"</p>
-              <footer>- Susanne Larsen</footer>
+              <p>- Susanne Larsen</p>
           </div>
           <div class="comment">
               <p>"Jeg fik min lille Buster her, og han er den dejligste lille hund"</p>
-              <footer>- Jane Petersen</footer>
+              <p>- Jane Petersen</p>
           </div>
           <div class="comment">
               <p>"Super søde og flinke medarbejdere!"</p>
-              <footer>- Lars Thomsen</footer>
+              <p>- Lars Thomsen</p>
           </div>
           <div class="comment">
               <p>"God oplevelse, kan anbefaldes"</p>
-              <footer>- Anne Jørgensen</footer>
+              <p>- Anne Jørgensen</p>
           </div>
       </section>
       <button class="next" onclick="nextComment()">❯</button>
