@@ -9,7 +9,6 @@
 
 .heroVideo video{
     max-width: 100%;
-    
 }
 
 .textOverlay {
@@ -24,9 +23,9 @@
 }
 
 .heroText {
-    background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+    background-color: rgba(0, 0, 0, 0.5); 
     padding: 20px;
-    border-radius: 5px; /* Optional: rounded corners */
+    border-radius: 5px; 
 }
 
 .heroText h1 {
@@ -46,6 +45,7 @@
     gap: 20px; 
     padding-top: 4rem;
   }
+
   .ownerAndTxtBottom {
     display: flex;
     align-items: flex-start; 
@@ -73,6 +73,7 @@
   }
 
   /*----Ny ven Div----*/
+  
   .nyVenSec {
     background-color: var(--globalGreen);
     text-align: center;
@@ -112,8 +113,6 @@
     margin: 0; 
   }
   
-/*----Pension & Internat Section----*/
-
 
 /*----Carousel Kommentarer----*/
 
