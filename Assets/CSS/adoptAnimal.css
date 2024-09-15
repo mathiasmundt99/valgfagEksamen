@@ -1,0 +1,88 @@
+
+/*----Hero Section----*/
+.heroSec {
+    display: flex; 
+    align-items: stretch; 
+}
+
+.heroTextDiv, .heroPic {
+    flex: 1; 
+}
+
+.heroPic img {
+    width: 100%; 
+    height: auto; 
+}
+
+.heroTextDiv{
+    background-color: var(--acordionGreen);
+} 
+
+.heroTextDiv h1 {
+    font-size: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.heroTextDiv p {
+    margin-top: 10px; 
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+/*----Animal Section----*/
+
+.nyVenDivAdopted {
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
+    width: 100%; 
+    padding: 2rem;
+}
+
+
+/*----Filter Section----*/
+
+.filterSection {
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.filterSection form {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.dropdownBtn {
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    background-color: var(--btnBlue);
+    border-radius: 12px;
+}
+
+.dropdownBtn:hover {
+    background-color: var(--hoverGreen);
+}
+
+.dropdownOptions {
+    display: none; 
+    position: absolute;
+    background-color: var(--acordionGreen);
+    padding: 12px;
+    width: max-content;
+    min-width: 100px;
+    border-radius: 12px;
+}
+
+.dropdownOptions label {
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+}
+
+
+
+
+

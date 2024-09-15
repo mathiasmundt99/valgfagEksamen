@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../Assets/CSS/globalStyle.css" />
+    <link rel="stylesheet" href="../Assets/CSS/adoptAnimal.css" />
+    <link rel="stylesheet" href="../Assets/CSS/dagligRutine.css" />
+    <link rel="stylesheet" href="../Assets/CSS/index.css" />
+    <script src="../Assets/JS/app.js" defer></script>
+  </head>
+  <body>
+    <section class="sellingPointsBar">
+      <div class="sellingpoint">
+        <img src="../Assets/Img/ikoner/thumbsUp.svg" alt="Thumbs up ikon" />
+        <p>Internat og pension i en</p>
+      </div>
+      <div class="sellingpoint">
+        <img src="../Assets/Img/ikoner/doktor.svg" alt="Doktor ikon" />
+        <p>Drives af uddannet dyrelæge og veterinærsygeplejerske</p>
+      </div>
+      <div class="sellingpoint">
+        <img src="../Assets/Img/ikoner/hjerte.svg" alt="Hjerte ikon" />
+        <p>Vi elsker alle internatdyr og pensionsdyr ens!</p>
+      </div>
+    </section>
+    <header>
+      <img src="../Assets/Img/Forside/logo.png" alt="logo" class="navlogo" />
+      <nav>
+        <ul>
+          <li>
+            <a href="#">Adoption</a>
+            <ul class="dropDownAdoption">
+              <li><a href="#">Adopter et dyr</a></li>
+              <li><a href="#">Praktisk information</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Pensionsophold</a>
+            <ul class="dropDownPension">
+              <li><a href="#">Daglig rutine</a></li>
+              <li><a href="#">Book ophold</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Adfærdstræning</a></li>
+          <li><a href="#">Produkter</a></li>
+          <li><a href="#">Tips & Tricks</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Kontakt os</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="heroSec">
+        <div class="heroTextDiv">
+          <h1>Find din nye bedste ven</h1>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe
+            facere labore amet cum aperiam nihil neque quae, iure voluptate
+            atque dolorum veniam minima qui corporis! Rem numquam recusandae
+            explicabo quis.
+          </p>
+        </div>
+        <div class="heroPic">
+          <!-- Dummy image -->
+          <img
+            src="../Assets/Img/adopterDyr/adoptAnimal.png"
+            alt="Billede af hund og par"
+          />
+        </div>
+      </section>
+      <!-- <section class="animalFilter">
+        <form id="animalFilterForm">
+          <label for="animalType">Dyre Art:</label>
+          <select name="animalType" id="animalType">
+            <option value="all">Alle</option>
+            <option value="dog">Hund</option>
+            <option value="cat">Kat</option>
+          </select>
+
+          <label for="genderType">Køn:</label>
+          <select name="genderType" id="genderType">
+            <option value="all">Alle</option>
+            <option value="male">Han</option>
+            <option value="female">Hun</option>
+          </select>
+
+          <label for="animaleRace">Race:</label>
+          <select name="animaleRace" id="animaleRace">
+            <option value="all">Alle</option>
+            <option value="goldenRetriever">Golden Retriever</option>
+            <option value="pitbull">Pitbull</option>
+            <option value="any">???...</option>
+          </select>
+
+          <label for="familyFriendly">Familievenlig:</label>
+          <select name="familyFriendly" id="familyFriendly">
+            <option value="all">Alle</option>
+            <option value="familiyFriendlyTrue">Ja</option>
+            <option value="familiyFriendlyFalse">Nej</option>
+          </select>
+
+          <label for="huntingDog">Egnet Til Jagt:</label>
+          <select name="huntingDog" id="huntingDog">
+            <option value="all">Alle</option>
+            <option value="huntingDogTrue">Ja</option>
+            <option value="huntingDogFalse">Nej</option>
+          </select>
+
+          <button type="submit">Søg</button>
+        </form>
+      </section> -->
+
+      <section class="filterSection">
+        <form id="animalFilterForm" method="GET">
+          <div class="dropdown">
+            <button type="button" class="dropdownBtn">Dyreart</button>
+            <div class="dropdownOptions">
+              <label>
+                <input type="checkbox" name="allAnimals" value="All" /> Alle
+              </label>
+              <label>
+                <input type="checkbox" name="dog" value="dog" /> Hund
+              </label>
+              <label>
+                <input type="checkbox" name="cat" value="cat" /> Kat
+              </label>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <button type="button" class="dropdownBtn">Køn</button>
+            <div class="dropdownOptions">
+              <label>
+                <input type="checkbox" name="allGenders" value="All" /> Alle
+              </label>
+              <label>
+                <input type="checkbox" name="male" value="male" /> Han
+              </label>
+              <label>
+                <input type="checkbox" name="female" value="female" /> Hun
+              </label>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <button type="button" class="dropdownBtn">Race</button>
+            <div class="dropdownOptions">
+              <label>
+                <input type="checkbox" name="allRaces" value="All" /> Alle Racer
+              </label>
+              <label>
+                <input
+                  type="checkbox"
+                  name="goldenRetriever"
+                  value="goldenRetriever"
+                />
+                Golden Retriever
+              </label>
+              <label>
+                <input type="checkbox" name="pitbull" value="pitbull" /> Pitbull
+              </label>
+              <label>
+                <input type="checkbox" name="dummyBox" value="dummyBox" /> Dummy
+                Box
+              </label>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <button type="button" class="dropdownBtn">Familievenlig</button>
+            <div class="dropdownOptions">
+              <label>
+                <input
+                  type="checkbox"
+                  name="familyFriendly"
+                  value="familyFriendly"
+                />
+                Alle
+              </label>
+              <label>
+                <input
+                  type="checkbox"
+                  name="familiyFriendlyTrue"
+                  value="familiyFriendlyTrue"
+                />
+                Ja
+              </label>
+              <label>
+                <input
+                  type="checkbox"
+                  name="familiyFriendlyFalse"
+                  value="familiyFriendlyFalse"
+                />
+                Nej
+              </label>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <button type="button" class="dropdownBtn">Egnet til Jagt</button>
+            <div class="dropdownOptions">
+              <label>
+                <input type="checkbox" name="huntingDog" value="huntingDog" />
+                Alle
+              </label>
+              <label>
+                <input
+                  type="checkbox"
+                  name="huntingDogTrue"
+                  value="huntingDogTrue"
+                />
+                Ja
+              </label>
+              <label>
+                <input
+                  type="checkbox"
+                  name="huntingDogFalse"
+                  value="huntingDogFalse"
+                />
+                Nej
+              </label>
+            </div>
+          </div>
+        </form>
+      </section>
+
+      <section class="animals">
+        <div class="nyVenDivAdopted">
+          <div class="dyr">
+            <img src="../Assets/Img/Forside/dummyDog.png" alt="" />
+            <h4>Bob</h4>
+            <p>Tid hos internat ____________ 4 mdr.</p>
+          </div>
+        </div>
+      </section>
+      <script src="../Assets/JS/adoptAnimal.js"></script>
+    </main>
+    <footer>
+      <section class="footerInternat">
+        <h3>Sejr og Davidsens Dyreinternat</h3>
+        <div class="footerIcons">
+          <div class="footerLokation">
+            <img src="../Assets/Img/ikoner/lokation.svg" alt="Lokation ikon" />
+            <p>Dyrevej 1, 9210 Aalborg Sø</p>
+          </div>
+          <div class="footerMobil">
+            <img src="../Assets/Img/ikoner/mobil.svg" alt="mobil ikon" />
+            <p>12345678</p>
+          </div>
+          <div class="footerMail">
+            <img src="../Assets/Img/ikoner/mail.svg" alt="Mail ikon" />
+            <p>sejr@dyreinternat.dk</p>
+          </div>
+        </div>
+      </section>
+      <section class="footerLogo">
+        <img class="logo" src="../Assets/Img/Forside/logo.png" alt="Logo" />
+        <div class="socialIcons">
+          <img src="../Assets/Img/ikoner/instagram.svg" alt="Instagram logo" />
+          <img src="../Assets/Img/ikoner/facebook.svg" alt="Facebook logo" />
+        </div>
+      </section>
+      <section class="footerPension">
+        <h3>Sejr og Davidsens Dyrepension</h3>
+        <div class="footerIcons">
+          <div class="footerLokation">
+            <img src="../Assets/Img/ikoner/lokation.svg" alt="Lokation ikon" />
+            <p>Dyrevej 1, 9210 Aalborg Sø</p>
+          </div>
+          <div class="footerMobil">
+            <img src="../Assets/Img/ikoner/mobil.svg" alt="mobil ikon" />
+            <p>12345678</p>
+          </div>
+          <div class="footerMail">
+            <img src="../Assets/Img/ikoner/mail.svg" alt="Mail ikon" />
+            <p>sejr@dyrepension.dk</p>
+          </div>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
