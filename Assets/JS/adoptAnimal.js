@@ -2,14 +2,20 @@
 document.querySelectorAll('.dropdownBtn').forEach(button => {
     button.addEventListener('click', function(event) {
         const dropdownOptions = this.nextElementSibling;
-        dropdownOptions.style.display = dropdownOptions.style.display === 'block' ? 'none' : 'block';
+        if (dropdownOptions.style.display === 'block') {
+            dropdownOptions.style.display = 'none';
+        } else {
+            dropdownOptions.style.display = 'block';
+        }
         event.stopPropagation();
     });
 });
 
+
 window.onclick = function(event) {
     if (!event.target.matches('.dropdownBtn') && !event.target.closest('.dropdownOptions')) {
         const dropdowns = document.querySelectorAll('.dropdownOptions');
+        
         dropdowns.forEach(dropdown => {
             if (dropdown.style.display === 'block') {
                 dropdown.style.display = 'none';
@@ -17,4 +23,3 @@ window.onclick = function(event) {
         });
     }
 }
-
