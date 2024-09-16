@@ -18,6 +18,7 @@
     --yellowHeadFoot: #F1DC99;
     --txtColor: #110106;
     --white: #FFFFFF;
+    --hoverBtn: #337D7D;
 }
 
 body{
@@ -188,7 +189,7 @@ footer{
 }
 
 .blueButton:hover{
-    background-color:#337D7D ;
+    background-color: var(--hoverBtn);
 }
 
 .buttonDiv{
