@@ -1,0 +1,162 @@
+
+
+.heroPraktiskInfo{
+    text-align: center;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.kontaktFlex{
+    margin-top: 3rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.praktiskKontakt{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+}
+
+
+.praktiskInfoOmInternatet{
+    display: flex;
+    margin-top: 3rem;
+    padding:3rem;
+    gap: 3rem   ;
+    padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    .backgroundSVG{
+        overflow-x:hidden;
+        position: relative;
+    }
+
+    .backgroundSVG::before{
+        content: '';
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        width: 100vw;
+        height: 100vh;
+        background-image: url('../Img/SVG/poteSVG.svg');
+        background-size: contain; 
+        background-repeat: no-repeat;
+        z-index: -1;
+        pointer-events: none;
+    }
+    
+    .praktiskInfoOmInternatet div img{
+        width: 30rem;
+      height: auto;
+    }
+
+    /* accordion */
+
+    .praktiskInfoAccordionSec{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .accordion{
+        max-width: 80vw;
+        background-color: var(--globalGreen);
+        border-radius: 30px;
+    }
+
+    .accordion .contentBox{
+        position: relative;
+    }
+
+    .accordion .contentBox .praktiskInfolabel{
+        position: relative;
+        padding: 1rem;
+        cursor: pointer;
+    }
+
+    .accordion .contentBox .praktiskInfolabel::before{
+        content: '+';
+        position: absolute;
+        top: 50%;
+        right: 2rem;
+        transform: translateY(-50%);
+        font-size: 1.5rem;
+    }
+
+    .accordion .contentBox .PraktiskinfoIndhold{
+        position: relative;
+        background-color: var(  --yellowHeadFoot);
+        height: 0;
+        overflow: hidden;
+        transition: 0.5s;
+        overflow-y: auto;
+    }
+
+    .accordion .contentBox.active .PraktiskinfoIndhold{
+        height: 6rem;
+        padding: 1rem;
+    }
+
+    .accordion .contentBox.active .praktiskInfolabel::before{
+        content: '-';
+    }
+
+    .contentBox hr{
+        margin: 0;
+        border: 0.5px  solid var(--txtColor);
+    }
+
+    /* kontaktformular */
+    .priserSec h3{
+        text-align: center;
+    }
+
+    .bookPensionsopholdSec{
+        background-image: url(../Img/bookOphold/kontaktFormular.png);
+        padding-block: 3rem;
+        margin-top: 3rem;
+    }
+
+    .bookOpholdGreenSec h3{
+        text-align: center;
+    }
+
+    .bookOpholdGreenSec{
+        background-color: var(--globalGreen);
+        margin-inline: 20vw;
+        margin-block: 3rem;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-block: 3rem; 
+    }
+
+    .dyretFlex, .ejerFlex{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .bookOpholdGreenSec p{
+        text-align: center;
+    }
+
+    .saerligeBemaerkninger{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 2rem; 
+    }
+
+    .bookPensionsopholdSec input, .bookPensionsopholdSec select, .bookPensionsopholdSec textarea{
+        border-radius: 30px;
+        border: none;
+        padding: 0.5rem;
+    }
