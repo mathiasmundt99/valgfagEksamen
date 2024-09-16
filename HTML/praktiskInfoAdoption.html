@@ -50,14 +50,14 @@
         </ul>
       </nav>
     </header>
-    <section class="heroPraktiskInfo">
-      <h1>Praktisk information omkring adoption</h1>
-      <p>
-        På denne side kan du læse alt du har brug for at vide omkring adoption
-        af et dyr og processen omkring det.
-      </p>
-    </section>
-    <div class="backgroundSVG">
+    <div class="backgroundSVG2">
+      <section class="heroPraktiskInfo">
+        <h1>Praktisk information omkring adoption</h1>
+        <p>
+          På denne side kan du læse alt du har brug for at vide omkring adoption
+          af et dyr og processen omkring det.
+        </p>
+      </section>
       <section class="kontaktFlex">
         <section class="praktiskKontakt">
           <div class="greenBox">
@@ -89,6 +89,8 @@
           </div>
         </section>
       </section>
+    </div>
+    <div class="backgroundSVG">
       <section class="praktiskInfoOmInternatet">
         <div>
           <img
@@ -175,7 +177,6 @@
             ynglingsgenstand, så den føler sig tryg de første par dage
             hjemmefra.
           </div>
-          <hr />
         </div>
       </div>
     </section>
@@ -187,28 +188,31 @@
             <label for="dato">Hvornår vil du besøge os?</label>
             <input type="date" />
             <br />
+            <br />
             <label for="navnPåDyret"
               >Er der et bestemt dyr du vil besøge?</label
             >
             <input
               type="text"
-              name="navn"
-              id="navn"
+              name="navnPåDyret"
+              id="navnPåDyret"
               placeholder="Skriv navnet her..." />
             <br />
             <div class="omEjer">
               <p>fortæl om dig</p>
               <div class="ejerFlex">
                 <div class="ejerDiv">
-                  <label for="navnEjer">Navn på dig</label>
+                  <label class="labelkontakt" for="navnEjer">Navn på dig</label>
                   <br />
                   <input
                     type="text"
-                    name="navn"
-                    id="navn"
+                    name="navnEjer"
+                    id="navnEjer"
                     placeholder="Skriv navnet her..." />
                   <br />
-                  <label for="adresseEjer">Adresse på dig</label>
+                  <label class="labelkontakt" for="adresseEjer"
+                    >Adresse på dig</label
+                  >
                   <br />
                   <input
                     type="text"
@@ -218,7 +222,9 @@
                   <br />
                 </div>
                 <div class="dyretDiv">
-                  <label for="nummerEjer">Mobilnummer på dig</label>
+                  <label class="labelkontakt" for="nummerEjer"
+                    >Mobilnummer på dig</label
+                  >
                   <br />
                   <input
                     type="tel"
@@ -226,7 +232,9 @@
                     id="nummerEjer"
                     placeholder="Skriv mobilnummeret her..." />
                   <br />
-                  <label for="emailEjer">Email på dig</label>
+                  <label class="labelkontakt" for="emailEjer"
+                    >Email på dig</label
+                  >
                   <br />
                   <input
                     type="email"
@@ -249,7 +257,13 @@
                   rows="5"></textarea>
               </div>
             </div>
-            <input type="submit" value="Book besøg nu" />
+            <div class="submitKnap">
+              <input
+                class="blueButton"
+                id="submit"
+                type="submit"
+                value="Book besøg nu" />
+            </div>
           </form>
         </div>
       </div>

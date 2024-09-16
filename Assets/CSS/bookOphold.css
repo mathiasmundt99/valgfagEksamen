@@ -88,16 +88,18 @@
         border: 0.5px  solid var(--txtColor);
     }
 
-/* kontaktformular */
-
+    /* kontaktformular */
     .priserSec h3{
         text-align: center;
     }
 
     .bookPensionsopholdSec{
         background-image: url(../Img/bookOphold/kontaktFormular.png);
+        background-size: cover;
         padding-block: 3rem;
         margin-top: 3rem;
+        display: flex;
+        justify-content: center;
     }
 
     .bookOpholdGreenSec h3{
@@ -106,7 +108,7 @@
 
     .bookOpholdGreenSec{
         background-color: var(--globalGreen);
-        margin-inline: 20vw;
+        width: 50vw;
         margin-block: 3rem;
         border-radius: 30px;
         display: flex;
@@ -140,3 +142,20 @@
         border: none;
         padding: 0.5rem;
     }
+
+
+label{
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;;
+}
+
+.submitKnap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.omEjer p, .omDyret p{
+    font-weight: bold;
+}
