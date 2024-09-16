@@ -7,15 +7,13 @@ document.querySelectorAll('.dropdownBtn').forEach(button => {
         } else {
             dropdownOptions.style.display = 'block';
         }
-        event.stopPropagation();
     });
 });
 
-
+// W3 School 
 window.onclick = function(event) {
     if (!event.target.matches('.dropdownBtn') && !event.target.closest('.dropdownOptions')) {
         const dropdowns = document.querySelectorAll('.dropdownOptions');
-        
         dropdowns.forEach(dropdown => {
             if (dropdown.style.display === 'block') {
                 dropdown.style.display = 'none';
