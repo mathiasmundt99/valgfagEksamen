@@ -1,0 +1,142 @@
+.heroBookOphold{
+    text-align: center;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.kontaktFlex, .priserSec{
+    margin-top: 3rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.bookKontakt, .priserInnerSec{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+}
+
+
+.bookOpholdOmPensionen{
+    display: flex;
+    margin-top: 3rem;
+    padding:3rem;
+    gap: 3rem   ;
+    padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    
+    .bookOpholdOmPensionen div img{
+        width: 30rem;
+      height: auto;
+    }
+
+    /* accordion */
+
+    .bookOpholdAccordionSec{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .accordion{
+        max-width: 80vw;
+        background-color: var(--globalGreen);
+        border-radius: 30px;
+    }
+
+    .accordion .contentBox{
+        position: relative;
+    }
+
+    .accordion .contentBox .bookOpholdlabel{
+        position: relative;
+        padding: 1rem;
+        cursor: pointer;
+    }
+
+    .accordion .contentBox .bookOpholdlabel::before{
+        content: '+';
+        position: absolute;
+        top: 50%;
+        right: 2rem;
+        transform: translateY(-50%);
+        font-size: 1.5rem;
+    }
+
+    .accordion .contentBox .bookOpholdIndhold{
+        position: relative;
+        background-color: var(  --yellowHeadFoot);
+        height: 0;
+        overflow: hidden;
+        transition: 0.5s;
+        overflow-y: auto;
+    }
+
+    .accordion .contentBox.active .bookOpholdIndhold{
+        height: 6rem;
+        padding: 1rem;
+    }
+
+    .accordion .contentBox.active .bookOpholdlabel::before{
+        content: '-';
+    }
+
+    .contentBox hr{
+        margin: 0;
+        border: 0.5px  solid var(--txtColor);
+    }
+
+/* kontaktformular */
+
+    .priserSec h3{
+        text-align: center;
+    }
+
+    .bookPensionsopholdSec{
+        background-image: url(../Img/bookOphold/kontaktFormular.png);
+        padding-block: 3rem;
+        margin-top: 3rem;
+    }
+
+    .bookOpholdGreenSec h3{
+        text-align: center;
+    }
+
+    .bookOpholdGreenSec{
+        background-color: var(--globalGreen);
+        margin-inline: 20vw;
+        margin-block: 3rem;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-block: 3rem; */
+    }
+
+    .dyretFlex, .ejerFlex{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .bookOpholdGreenSec p{
+        text-align: center;
+    }
+
+    .saerligeBemaerkninger{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 2rem; 
+    }
+
+    .bookPensionsopholdSec input, .bookPensionsopholdSec select, .bookPensionsopholdSec textarea{
+        border-radius: 30px;
+        border: none;
+        padding: 0.5rem;
+    }
