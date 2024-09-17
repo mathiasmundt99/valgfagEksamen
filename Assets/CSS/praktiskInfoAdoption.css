@@ -1,23 +1,25 @@
-.heroBookOphold{
+
+
+.heroPraktiskInfo{
     text-align: center;
     margin-left: 4rem;
     margin-right: 4rem;
 }
 
-.kontaktFlex, .priserSec{
+.kontaktFlex{
     margin-top: 3rem;
     margin-left: 4rem;
     margin-right: 4rem;
 }
 
-.bookKontakt, .priserInnerSec{
+.praktiskKontakt{
     display: flex;
     justify-content: space-around;
     margin-top: 3rem;
 }
 
 
-.bookOpholdOmPensionen{
+.praktiskInfoOmInternatet{
     display: flex;
     margin-top: 3rem;
     padding:3rem;
@@ -25,15 +27,54 @@
     padding-left: 4rem;
         padding-right: 4rem;
     }
-    
-    .bookOpholdOmPensionen div img{
+
+    .praktiskInfoOmInternatet div img{
         width: 30rem;
       height: auto;
     }
 
+    .backgroundSVG{
+        overflow:hidden;
+        position: relative;
+    }
+
+    .backgroundSVG::before{
+        content: '';
+        position: absolute;
+        width: 30rem;
+        height: 30rem;
+        top: 10%;
+        left: 60%;
+        background-image: url('../Img/SVG/poteSVG.svg');
+        background-size: contain; 
+        background-repeat: no-repeat;
+        z-index: -1;
+         pointer-events: none;  
+     }
+    
+
+    .backgroundSVG2{
+        overflow-y:hidden;
+        position: relative;
+    }
+
+    .backgroundSVG2::before{
+        content: '';
+        position: absolute;
+        top: 10%;
+        right: 60%;
+        width: 30rem;
+        height: 30rem;
+        background-image: url('../Img/SVG/kodbenSVG.svg');
+        background-size: contain; 
+        background-repeat: no-repeat;
+        z-index: -1;
+        pointer-events: none;
+    } 
+
     /* accordion */
 
-    .bookOpholdAccordionSec{
+    .praktiskInfoAccordionSec{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -50,13 +91,13 @@
         position: relative;
     }
 
-    .accordion .contentBox .bookOpholdlabel{
+    .accordion .contentBox .praktiskInfolabel{
         position: relative;
         padding: 1rem;
         cursor: pointer;
     }
 
-    .accordion .contentBox .bookOpholdlabel::before{
+    .accordion .contentBox .praktiskInfolabel::before{
         content: '+';
         position: absolute;
         top: 50%;
@@ -65,7 +106,7 @@
         font-size: 1.5rem;
     }
 
-    .accordion .contentBox .bookOpholdIndhold{
+    .accordion .contentBox .PraktiskinfoIndhold{
         position: relative;
         background-color: var(  --yellowHeadFoot);
         height: 0;
@@ -74,12 +115,12 @@
         overflow-y: auto;
     }
 
-    .accordion .contentBox.active .bookOpholdIndhold{
+    .accordion .contentBox.active .PraktiskinfoIndhold{
         height: 6rem;
         padding: 1rem;
     }
 
-    .accordion .contentBox.active .bookOpholdlabel::before{
+    .accordion .contentBox.active .praktiskInfolabel::before{
         content: '-';
     }
 
@@ -156,6 +197,6 @@ label{
     margin-top: 2rem;
 }
 
-.omEjer p, .omDyret p{
+.omEjer p{
     font-weight: bold;
 }
