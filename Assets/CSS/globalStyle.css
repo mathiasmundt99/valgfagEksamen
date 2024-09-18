@@ -218,3 +218,845 @@ footer{
 .greenBox p{
     text-align: center;
 }
+
+/*----SINGLE ANIMAL -----*/
+  /*----Hero section----*/
+
+  .heroSec {
+    display: flex; 
+    align-items: stretch; 
+}
+
+.animalDesc, .animalPic {
+    flex: 1; 
+}
+
+.animalPic img {
+    width: 100%; 
+    height: auto; 
+}
+
+
+.animalDesc h1 {
+    font-size: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.animalDesc p {
+    margin-top: 10px; 
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+/*-----Blue box-----*/
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+.blueBoxLink:hover .blueBox img {
+    animation: shake 0.5s; 
+    animation-iteration-count: 1; 
+}
+
+.blueBoxLink {
+    text-decoration: none; 
+    display: block; 
+}
+
+.blueBox {
+    background-color: var(--btnBlue);
+    width: 18rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    padding-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-shadow: 0px 3px 6px var(--lightBlue);
+  
+}
+
+.blueBox h3 {
+    text-align: center;
+    color: black;
+}
+
+.blueBox:hover {
+    background-color: var(--hoverBtn);
+}
+
+.bookKontakt {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+}
+
+
+
+  /*----Hundens egenskaber----*/
+
+  .animalAttributes {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.animalAttributes h3 {
+    padding-bottom: 2rem;
+}
+
+.attribute {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-bottom: 2rem;
+}
+
+.attribute-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 1rem; 
+}
+
+.line {
+    flex-grow: 1; 
+    border-bottom: 1px solid black; 
+}
+
+.attribute-value {
+    font-size: 20px;
+    margin-left: 1rem; 
+}
+
+/*--- PRAKTISK INFO ---*/
+
+
+
+.heroPraktiskInfo{
+    text-align: center;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.kontaktFlex{
+    margin-top: 3rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.praktiskKontakt{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+}
+
+
+.praktiskInfoOmInternatet{
+    display: flex;
+    margin-top: 3rem;
+    padding:3rem;
+    gap: 3rem   ;
+    padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    .praktiskInfoOmInternatet div img{
+        width: 30rem;
+      height: auto;
+    }
+
+    .backgroundSVG{
+        overflow:hidden;
+        position: relative;
+    }
+
+    .backgroundSVG::before{
+        content: '';
+        position: absolute;
+        width: 30rem;
+        height: 30rem;
+        top: 10%;
+        left: 60%;
+        background-image: url('../Img/SVG/poteSVG.svg');
+        background-size: contain; 
+        background-repeat: no-repeat;
+        z-index: -1;
+         pointer-events: none;  
+     }
+    
+
+    .backgroundSVG2{
+        overflow-y:hidden;
+        position: relative;
+    }
+
+    .backgroundSVG2::before{
+        content: '';
+        position: absolute;
+        top: 10%;
+        right: 60%;
+        width: 30rem;
+        height: 30rem;
+        background-image: url(../Img/SVG/kodbenSVG.svg);
+        background-size: contain; 
+        background-repeat: no-repeat, no-repeat;
+        background-position: center;
+        z-index: -1;
+        pointer-events: none;
+    } 
+
+    /* accordion */
+
+    .praktiskInfoAccordionSec{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .accordion{
+        max-width: 80vw;
+        background-color: var(--globalGreen);
+        border-radius: 30px;
+    }
+
+    .accordion .contentBox{
+        position: relative;
+    }
+
+    .accordion .contentBox .praktiskInfolabel{
+        position: relative;
+        padding: 1rem;
+        cursor: pointer;
+    }
+
+    .accordion .contentBox .praktiskInfolabel::before{
+        content: '+';
+        position: absolute;
+        top: 50%;
+        right: 2rem;
+        transform: translateY(-50%);
+        font-size: 1.5rem;
+    }
+
+    .accordion .contentBox .PraktiskinfoIndhold{
+        position: relative;
+        background-color: var(  --yellowHeadFoot);
+        height: 0;
+        overflow: hidden;
+        transition: 0.5s;
+        overflow-y: auto;
+    }
+
+    .accordion .contentBox.active .PraktiskinfoIndhold{
+        height: 6rem;
+        padding: 1rem;
+    }
+
+    .accordion .contentBox.active .praktiskInfolabel::before{
+        content: '-';
+    }
+
+    .contentBox hr{
+        margin: 0;
+        border: 0.5px  solid var(--txtColor);
+    }
+
+    /* kontaktformular */
+    .priserSec h3{
+        text-align: center;
+    }
+
+    .bookPensionsopholdSec{
+        background-image: url(../Img/bookOphold/kontaktFormular.png);
+        background-size: cover;
+        padding-block: 3rem;
+        margin-top: 3rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .bookOpholdGreenSec h3{
+        text-align: center;
+    }
+
+    .bookOpholdGreenSec{
+        background-color: var(--globalGreen);
+        width: 50vw;
+        margin-block: 3rem;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-block: 3rem; 
+    }
+
+    .dyretFlex, .ejerFlex{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .bookOpholdGreenSec p{
+        text-align: center;
+    }
+
+    .saerligeBemaerkninger{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 2rem; 
+    }
+
+    .bookPensionsopholdSec input, .bookPensionsopholdSec select, .bookPensionsopholdSec textarea{
+        border-radius: 30px;
+        border: none;
+        padding: 0.5rem;
+    }
+
+
+label{
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;;
+}
+
+.submitKnap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.omEjer p{
+    font-weight: bold;
+}
+
+/*--- ADOPT ANIMAL ----*/
+
+
+/*----Hero Section----*/
+.heroSec {
+    display: flex; 
+    align-items: stretch; 
+}
+
+.heroTextDiv, .heroPic {
+    flex: 1; 
+}
+
+.heroPic img {
+    width: 100%; 
+    height: auto; 
+}
+
+.heroTextDiv{
+    background-color: var(--acordionGreen);
+} 
+
+.heroTextDiv h1 {
+    font-size: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.heroTextDiv p {
+    margin-top: 10px; 
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+/*----Animal Section----*/
+
+.nyVenDivAdopted {
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
+    width: 100%; 
+    padding: 2rem;
+}
+
+
+/*----Filter Section----*/
+
+.filterSection {
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.filterSection form {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.dropdownBtn {
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    background-color: var(--btnBlue);
+    border-radius: 12px;
+}
+
+.dropdownBtn:hover {
+    background-color: var(--hoverGreen);
+}
+
+.dropdownOptions {
+    display: none; 
+    position: absolute;
+    background-color: var(--acordionGreen);
+    padding: 12px;
+    width: max-content;
+    min-width: 100px;
+    border-radius: 12px;
+}
+
+.dropdownOptions label {
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+}
+
+/*---- INDEX ----*/
+
+/*-----Hero Video-----*/
+
+.heroVideo{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden; 
+}
+
+.heroVideo video{
+    max-width: 100%;
+}
+
+.textOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.heroText {
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 20px;
+    border-radius: 5px; 
+}
+
+.heroText h1 {
+    color: var(--white); 
+    margin: 0;
+    font-size: 2em; 
+    text-align: center;
+}
+
+
+
+/*----Owners Section----*/
+
+.ownerAndTxtTop {
+    display: flex;
+    align-items: flex-start; 
+    gap: 20px; 
+    padding-top: 4rem;
+  }
+
+  .ownerAndTxtBottom {
+    display: flex;
+    align-items: flex-start; 
+    gap: 20px;
+    padding-top: 4rem;
+  }
+  
+  .ownerAndTxtTop img {
+    max-width: 100%; 
+    height: auto; 
+    padding-left: 4rem;
+  }
+
+  .ownerAndTxtBottom img {
+    max-width: 100%; 
+    height: auto;
+    padding-right: 4rem;
+  }
+  
+  .ownerDesc {
+    flex: 1; 
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 4rem;
+  }
+
+/*----Ny ven Div----*/  
+  
+.nyVenSec {
+  background-color: var(--globalGreen);
+  text-align: center;
+}
+
+.nyVenSec h3 {
+  padding-top: 4rem;
+}
+
+.nyVenSec button {
+ margin-bottom: 2rem;
+}
+
+.nyVenDiv {
+  display: flex; 
+  justify-content: space-between; 
+  gap: 20px; 
+  width: 100%; 
+  padding: 2rem 1rem 4rem; 
+}
+
+.dyr {
+  flex: 1; 
+  text-align: center; 
+  box-sizing: border-box; 
+}
+
+.dyr img {
+  max-width: 100%; 
+  height: auto; 
+}
+
+.dyr h4 {
+  font-size: 28px;
+  margin: 0;
+}
+
+
+.animalAttributes {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.animalAttributes h3 {
+  padding-bottom: 2rem;
+}
+
+.attributeAnimalCTA {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+}
+
+.attributeTitleTime {
+  font-weight: bold;
+  margin-right: 1rem; 
+}
+
+.lineFEP {
+  flex-grow: 1; 
+  border-bottom: 1px solid black; 
+}
+
+.attributeTimevalueTime {
+  margin-left: 1rem; 
+}
+
+
+/*----Carousel Kommentarer----*/
+
+.commentWrapper {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 4rem; 
+}
+
+.commentCarouselSec {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    position: relative;
+}
+
+.carouselSec {
+    display: flex;
+    overflow: hidden;
+    width: 80%;
+    height: 150px
+}
+
+.comment {
+    display: none;
+    text-align: center;
+    padding: 20px;
+    min-width: 100%;
+    height: 100%
+}
+
+.comment.active {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 30px;
+}
+
+button {
+    background-color: var(--btnBlue);
+    color: var(--white);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--hoverGreen);
+}
+
+.prev, .next {
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+
+  /*--- BOOK OPHOLD ---*/
+
+  .heroBookOphold{
+    text-align: center;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.kontaktFlex, .priserSec{
+    margin-top: 3rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.bookKontakt, .priserInnerSec{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+}
+
+
+.bookOpholdOmPensionen{
+    display: flex;
+    margin-top: 3rem;
+    padding:3rem;
+    gap: 3rem   ;
+    padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    
+    .bookOpholdOmPensionen div img{
+        width: 30rem;
+      height: auto;
+    }
+
+    /* accordion */
+
+    .bookOpholdAccordionSec{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .accordion{
+        max-width: 80vw;
+        background-color: var(--globalGreen);
+        border-radius: 30px;
+    }
+
+    .accordion .contentBox{
+        position: relative;
+    }
+
+    .accordion .contentBox .bookOpholdlabel{
+        position: relative;
+        padding: 1rem;
+        cursor: pointer;
+    }
+
+    .accordion .contentBox .bookOpholdlabel::before{
+        content: '+';
+        position: absolute;
+        top: 50%;
+        right: 2rem;
+        transform: translateY(-50%);
+        font-size: 1.5rem;
+    }
+
+    .accordion .contentBox .bookOpholdIndhold{
+        position: relative;
+        background-color: var(  --yellowHeadFoot);
+        height: 0;
+        overflow: hidden;
+        transition: 0.5s;
+        overflow-y: auto;
+    }
+
+    .accordion .contentBox.active .bookOpholdIndhold{
+        height: 6rem;
+        padding: 1rem;
+    }
+
+    .accordion .contentBox.active .bookOpholdlabel::before{
+        content: '-';
+    }
+
+    .contentBox hr{
+        margin: 0;
+        border: 0.5px  solid var(--txtColor);
+    }
+
+    /* kontaktformular */
+    .priserSec h3{
+        text-align: center;
+    }
+
+    .bookPensionsopholdSec{
+        background-image: url(../Img/bookOphold/kontaktFormular.png);
+        background-size: cover;
+        padding-block: 3rem;
+        margin-top: 3rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .bookOpholdGreenSec h3{
+        text-align: center;
+    }
+
+    .bookOpholdGreenSec{
+        background-color: var(--globalGreen);
+        width: 50vw;
+        margin-block: 3rem;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-block: 3rem; 
+    }
+
+    .dyretFlex, .ejerFlex{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .bookOpholdGreenSec p{
+        text-align: center;
+    }
+
+    .saerligeBemaerkninger{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 2rem; 
+    }
+
+    .bookPensionsopholdSec input, .bookPensionsopholdSec select, .bookPensionsopholdSec textarea{
+        border-radius: 30px;
+        border: none;
+        padding: 0.5rem;
+    }
+
+
+label{
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;;
+}
+
+.submitKnap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.omEjer p, .omDyret p{
+    font-weight: bold;
+}
+
+/*DAGLIG RUTINE*/
+
+/* hero sektion */
+
+.heroDagligRutine{
+    text-align: center;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+/* Daglig rutine sektion */
+
+.dagligRutineSec{
+    margin-top: 3rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.dagligRutineInnersec{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+}
+
+.tidspunktDiv p, .tidspunktDiv h3{
+    text-align: center;
+}
+
+
+/* daglig rutine cta */
+
+.dagligRutineCtaSec{
+display: flex;
+margin-top: 3rem;
+padding:3rem;
+background-color: var(--globalGreen);
+gap: 3rem   ;
+padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.dagligRutineCtaSec div img{
+    width: 30rem;
+  height: auto;
+}
+
+
+
+
+

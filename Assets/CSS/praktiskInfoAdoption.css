@@ -1,4 +1,4 @@
-
+/* 
 
 .heroPraktiskInfo{
     text-align: center;
@@ -71,11 +71,11 @@
         background-position: center;
         z-index: -1;
         pointer-events: none;
-    } 
+    }  */
 
     /* accordion */
 
-    .praktiskInfoAccordionSec{
+    /* .praktiskInfoAccordionSec{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -128,10 +128,10 @@
     .contentBox hr{
         margin: 0;
         border: 0.5px  solid var(--txtColor);
-    }
+    } */
 
     /* kontaktformular */
-    .priserSec h3{
+    /* .priserSec h3{
         text-align: center;
     }
 
@@ -200,4 +200,4 @@ label{
 
 .omEjer p{
     font-weight: bold;
-}
+} */

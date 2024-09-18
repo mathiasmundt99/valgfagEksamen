@@ -1,14 +1,14 @@
 /* hero sektion */
 
-.heroDagligRutine{
+/* .heroDagligRutine{
     text-align: center;
     margin-left: 4rem;
     margin-right: 4rem;
-}
+} */
 
 /* Daglig rutine sektion */
 
-.dagligRutineSec{
+/* .dagligRutineSec{
     margin-top: 3rem;
     margin-left: 4rem;
     margin-right: 4rem;
@@ -22,12 +22,12 @@
 
 .tidspunktDiv p, .tidspunktDiv h3{
     text-align: center;
-}
+} */
 
 
 /* daglig rutine cta */
 
-.dagligRutineCtaSec{
+/* .dagligRutineCtaSec{
 display: flex;
 margin-top: 3rem;
 padding:3rem;
@@ -40,4 +40,4 @@ padding-left: 4rem;
 .dagligRutineCtaSec div img{
     width: 30rem;
   height: auto;
-}
+} */

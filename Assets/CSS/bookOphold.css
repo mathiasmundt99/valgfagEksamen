@@ -1,4 +1,4 @@
-.heroBookOphold{
+/* .heroBookOphold{
     text-align: center;
     margin-left: 4rem;
     margin-right: 4rem;
@@ -29,11 +29,11 @@
     .bookOpholdOmPensionen div img{
         width: 30rem;
       height: auto;
-    }
+    } */
 
     /* accordion */
 
-    .bookOpholdAccordionSec{
+    /* .bookOpholdAccordionSec{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -86,10 +86,10 @@
     .contentBox hr{
         margin: 0;
         border: 0.5px  solid var(--txtColor);
-    }
+    } */
 
     /* kontaktformular */
-    .priserSec h3{
+    /* .priserSec h3{
         text-align: center;
     }
 
@@ -158,4 +158,4 @@ label{
 
 .omEjer p, .omDyret p{
     font-weight: bold;
-}
+} */

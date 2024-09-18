@@ -1,6 +1,6 @@
 
 /*----Hero Section----*/
-.heroSec {
+/* .heroSec {
     display: flex; 
     align-items: stretch; 
 }
@@ -28,22 +28,22 @@
     margin-top: 10px; 
     padding-left: 10%;
     padding-right: 10%;
-}
+} */
 
 /*----Animal Section----*/
 
-.nyVenDivAdopted {
+/* .nyVenDivAdopted {
     display: grid; 
     grid-template-columns: repeat(4, 1fr); 
     gap: 20px; 
     width: 100%; 
     padding: 2rem;
-}
+} */
 
 
 /*----Filter Section----*/
 
-.filterSection {
+/* .filterSection {
     padding-top: 2rem;
     padding-left: 2rem;
     padding-right: 2rem;
@@ -80,7 +80,7 @@
     display: flex; 
     align-items: center; 
     gap: 10px; 
-}
+} */
 
 
 
