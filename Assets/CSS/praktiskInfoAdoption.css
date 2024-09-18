@@ -65,9 +65,10 @@
         right: 60%;
         width: 30rem;
         height: 30rem;
-        background-image: url('../Img/SVG/kodbenSVG.svg');
+        background-image: url(../Img/SVG/kodbenSVG.svg);
         background-size: contain; 
-        background-repeat: no-repeat;
+        background-repeat: no-repeat, no-repeat;
+        background-position: center;
         z-index: -1;
         pointer-events: none;
     } 
