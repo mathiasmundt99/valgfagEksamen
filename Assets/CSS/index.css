@@ -72,47 +72,77 @@
     padding-top: 4rem;
   }
 
-  /*----Ny ven Div----*/
+/*----Ny ven Div----*/  
   
-  .nyVenSec {
-    background-color: var(--globalGreen);
-    text-align: center;
-  }
+.nyVenSec {
+  background-color: var(--globalGreen);
+  text-align: center;
+}
 
-  .nyVenSec h3{
-    padding-top: 4rem;
-  }
+.nyVenSec h3 {
+  padding-top: 4rem;
+}
 
-  .nyVenDiv {
-    display: flex; 
-    justify-content: space-between; 
-    gap: 20px; 
-    width: 100%; 
-    padding-bottom: 4rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 2rem;
-  }
-  
-  .dyr {
-    flex: 1; 
-    text-align: center; 
-    box-sizing: border-box; 
-  }
-  
-  .dyr img {
-    max-width: 100%; 
-    height: auto; 
-  }
+.nyVenSec button {
+ margin-bottom: 2rem;
+}
 
-  .dyr h4{
-    margin: 0;
-  }
-  
-  .dyr p {
-    margin: 0; 
-  }
-  
+.nyVenDiv {
+  display: flex; 
+  justify-content: space-between; 
+  gap: 20px; 
+  width: 100%; 
+  padding: 2rem 1rem 4rem; 
+}
+
+.dyr {
+  flex: 1; 
+  text-align: center; 
+  box-sizing: border-box; 
+}
+
+.dyr img {
+  max-width: 100%; 
+  height: auto; 
+}
+
+.dyr h4 {
+  font-size: 28px;
+  margin: 0;
+}
+
+
+.animalAttributes {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.animalAttributes h3 {
+  padding-bottom: 2rem;
+}
+
+.attributeAnimalCTA {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+}
+
+.attributeTitleTime {
+  font-weight: bold;
+  margin-right: 1rem; 
+}
+
+.lineFEP {
+  flex-grow: 1; 
+  border-bottom: 1px solid black; 
+}
+
+.attributeTimevalueTime {
+  margin-left: 1rem; 
+}
+
 
 /*----Carousel Kommentarer----*/
 

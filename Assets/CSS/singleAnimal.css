@@ -1,0 +1,117 @@
+  /*----Hero section----*/
+
+.heroSec {
+    display: flex; 
+    align-items: stretch; 
+}
+
+.animalDesc, .animalPic {
+    flex: 1; 
+}
+
+.animalPic img {
+    width: 100%; 
+    height: auto; 
+}
+
+
+.animalDesc h1 {
+    font-size: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.animalDesc p {
+    margin-top: 10px; 
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+/*-----Blue box-----*/
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+.blueBoxLink:hover .blueBox img {
+    animation: shake 0.5s; 
+    animation-iteration-count: 1; 
+}
+
+.blueBoxLink {
+    text-decoration: none; 
+    display: block; 
+}
+
+.blueBox {
+    background-color: var(--btnBlue);
+    width: 18rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    padding-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-shadow: 0px 3px 6px var(--lightBlue);
+  
+}
+
+.blueBox h3 {
+    text-align: center;
+    color: black;
+}
+
+.blueBox:hover {
+    background-color: var(--hoverBtn);
+}
+
+.bookKontakt {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+}
+
+
+
+  /*----Hundens egenskaber----*/
+
+  .animalAttributes {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.animalAttributes h3 {
+    padding-bottom: 2rem;
+}
+
+.attribute {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-bottom: 2rem;
+}
+
+.attribute-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 1rem; 
+}
+
+.line {
+    flex-grow: 1; 
+    border-bottom: 1px solid black; 
+}
+
+.attribute-value {
+    font-size: 20px;
+    margin-left: 1rem; 
+}
